@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" co ntent="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Thanos - Ashare</title>
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/app.css" >
+
+</head>
+
+<body>
+    <div class="row" >
+        <div id="ee" class="col-md-1" style="padding-right:0px">
+            <div class="gauntlet" id="gauntlet" style="margin-top:110px">
+                <img src="./images/thanos_idle.png">
+            </div>
+        </div>
+        <img src="./images/tp.png" style="width:20%;height:20%;"/>
+        <span class="badge" style="font-size:30px">Trump Snap</span>
+    </div>
+
+    <legend></legend>
+    <span id="aa"></span>
+    <div class="row" style="margin-left:20px">
+        <div id="sh" class="col-md-1">
+            <div><span class="iname">上证指数</span></div>
+            <div><span class="pct">0.52%</span></div>
+            <div><span id="idx" class="idx">3078.34</span></div>
+        </div>
+        <div id="sz" class="col-md-1">
+            <div class="iname">深证指数</div>
+            <div class="pct">0.54%</div>
+            <div class="idx">9674.53</div>
+        </div>
+        <div id="cyb" class="col-md-1">
+            <div class="iname">创业板指</div>
+            <div class="pct">0.51%</div>
+            <div class="idx">1623.78</div>
+        </div>
+        <div id="hsi" class="col-md-1">
+            <div class="iname">恒生指数</div>
+            <div class="pct">0.46%</div>
+            <div class="idx">30081.55</div>
+        </div>
+    </div>
+
+    <script src="./js/html2canvas.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
+
+
+<!-- 
+<table class="table table-hover table-condensed">
+        <thead>
+            <tr>
+                <th class="col-md-1">日志编号</th>
+                <th class="col-md-1">订单编号</th>
+                <th class="col-md-1">订单类别</th>
+                <th class="col-md-1">商品编号</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="box : ${datas}">
+                <th class="col-md-1" th:text="${box.s.id}"></th>
+                <td class="col-md-1" th:text="${box.c.id}"></td>
+                <td class="col-md-1">
+                </td>
+                <td class="col-md-1" th:text="${box.s.goodsId}"></td>
+            </tr>
+        </tbody>
+    </table> -->

@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+header {
+  width: 100%;
+}
+
+.img-pagination {
+  background: url("/images/google.png") no-repeat;
+  background-size: 167px !important;
+  height: 40px;
+  width: 20px;
+  display: block;
+}
+
+.iname {
+  
+}
+
+.idx {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  color: #222222;
+}
+
+.pct {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: red;
+}
+
+.gauntlet {
+  position: relative;
+  min-width: 80px;
+  max-width: 80px;
+  max-height: 80px;
+  min-height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.gauntlet>img {
+  cursor: pointer;
+}
+
+.content-canvas>canvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: transform 1s ease-out, opacity 1s ease-out;
+  opacity: 1;
+  transform: rotate(0deg) translate(0px, 0px) rotate(0deg);
+}
+
+.animation-transition {
+  border: 0px !important;
+}
+
+.none {
+  display: none;
+  opacity: 0;
+}
+
+.animation-in {
+  display: block;
+  opacity: 1;
+}
+
+.animation-in a,
+.animation-in p,
+.animation-in h2,
+.animation-in h4,
+.animation-in span,
+.animation-in b {
+  animation: animationColor .5s;
+}
+
+@keyframes animationColor {
+  0% {
+    color: #006621;
+  }
+
+  100% {
+    color: #006621;
+  }
+}
+
+
+@keyframes debug-pulse {
+  0% {
+    filter: none;
+  }
+
+  95% {
+    filter: none;
+  }
+
+  95% {
+    filter: drop-shadow(0 1px 0 rgba(255, 0, 0, 1));
+  }
+
+  100% {
+    filter: drop-shadow(0 1px 0 rgba(255, 0, 0, 1));
+  }
+}
